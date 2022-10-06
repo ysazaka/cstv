@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#252525</color>
+    <color name="secondary">#272639</color>
+    <color name="card_divider">#33FFFFFF</color>
+    <color name="card_live">#F42A35</color>
+    <color name="card_match_hour">#33FAFAFA</color>
 </resources>

@@ -1,11 +1,12 @@
-package com.ysazaka.cstv
+package com.ysazaka.cstv.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ysazaka.cstv.R
 
-class MainActivity : AppCompatActivity() {
+class MatchesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_matches)
     }
 }
