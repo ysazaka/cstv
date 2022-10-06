@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cstv">
         <activity
-            android:name=".ui.MatchesActivity"
+            android:name=".ui.MatchListActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SplashActivity"

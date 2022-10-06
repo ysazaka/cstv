@@ -1,26 +1,30 @@
 package com.ysazaka.cstv.ui
 
 import android.content.Intent
-import android.os.Bundle
-import android.os.Handler
-import androidx.appcompat.app.AppCompatActivity
-import com.ysazaka.cstv.R
+import android.view.View
+import com.ysazaka.cstv.base.BaseActivity
+import com.ysazaka.cstv.databinding.ActivitySplashBinding
 import java.util.*
 import kotlin.concurrent.timerTask
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+    private var _binding: ActivitySplashBinding? = null
+    private val binding get() = _binding!!
 
+    override fun getBinding(): View {
+        _binding = ActivitySplashBinding.inflate(layoutInflater)
+        return binding.root
+    }
+
+    override fun initView() {
         Timer().schedule(timerTask {
-            startMatchesActivity()
+            startMainActivity()
         }, SPLASH_DURATION_TIME)
     }
 
-    private fun startMatchesActivity() {
-        startActivity(Intent(this, MatchesActivity::class.java))
+    private fun startMainActivity() {
+        startActivity(Intent(this, MatchListActivity::class.java))
         finish()
     }
 
