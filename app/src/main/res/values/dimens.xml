@@ -32,4 +32,7 @@
     <dimen name="match_card_corner">16dp</dimen>
     <dimen name="player_card_corner">12dp</dimen>
 
+    <!-- Elevation -->
+    <dimen name="elevation_2dp">2dp</dimen>
+
 </resources>

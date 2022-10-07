@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MatchDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        android:src="@drawable/ic_arrow_back"
+        android:padding="@dimen/spacing_16dp"
+        android:layout_marginStart="@dimen/spacing_12dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/league_plus_serie"
+        android:textColor="@color/white"
+        android:textSize="@dimen/match_detail_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        android:layout_marginStart="@dimen/spacing_16dp" />
+
+    <ImageView
+        android:id="@+id/ivFirstTeamLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_team_logo_placeholder"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginTop="@dimen/spacing_24dp"
+        android:contentDescription="@string/first_team_logo" />
+
+    <TextView
+        android:id="@+id/tvFirstTeamName"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/team_one"
+        android:textColor="@color/team_name"
+        android:textSize="@dimen/team_name"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivFirstTeamLogo"
+        android:layout_marginTop="@dimen/spacing_12dp" />
+
+    <TextView
+        android:id="@+id/tvVersus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textColor="@color/vs"
+        android:textSize="@dimen/vs"
+        app:layout_constraintEnd_toStartOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSecondTeamLogo"
+        android:layout_marginStart="@dimen/spacing_24dp"
+        android:layout_marginEnd="@dimen/spacing_24dp" />
+
+    <ImageView
+        android:id="@+id/ivSecondTeamLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_team_logo_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstTeamLogo"
+        android:contentDescription="@string/second_team_logo" />
+
+    <TextView
+        android:id="@+id/tvSecondTeamName"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/team_two"
+        android:textColor="@color/team_name"
+        android:textSize="@dimen/team_name"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintEnd_toEndOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintTop_toTopOf="@+id/tvFirstTeamName" />
+
+    <TextView
+        android:id="@+id/tvMatchHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstTeamName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_20dp"
+        android:textColor="@color/match_hour"
+        android:textStyle="bold"
+        android:textSize="@dimen/match_detail_match_hour"
+        tools:text="@string/fake_match_hour" />
+
+    <include
+        android:id="@+id/vTeamOneFirstPlayer"
+        layout="@layout/item_team_one_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMatchHour"
+        android:layout_marginTop="@dimen/spacing_20dp"
+        />
+
+    <include
+        android:id="@+id/vTeamOneSecondPlayer"
+        layout="@layout/item_team_one_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTeamOneFirstPlayer"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        />
+
+    <include
+        android:id="@+id/vTeamOneThirdPlayer"
+        layout="@layout/item_team_one_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTeamOneSecondPlayer"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        />
+
+    <include
+        android:id="@+id/vTeamOneFourthPlayer"
+        layout="@layout/item_team_one_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTeamOneThirdPlayer"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        />
+
+    <include
+        android:id="@+id/vTeamOneFifthPlayer"
+        layout="@layout/item_team_one_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTeamOneFourthPlayer"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        />
+
+    <include
+        android:id="@+id/vTeamTwoFirstPlayer"
+        layout="@layout/item_team_two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTeamOneFirstPlayer"
+        />
+
+    <include
+        android:id="@+id/vTeamTwoSecondPlayer"
+        layout="@layout/item_team_two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTeamOneSecondPlayer"
+        />
+
+    <include
+        android:id="@+id/vTeamTwoThirdPlayer"
+        layout="@layout/item_team_two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTeamOneThirdPlayer"
+        />
+
+    <include
+        android:id="@+id/vTeamTwoFourthPlayer"
+        layout="@layout/item_team_two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTeamOneFourthPlayer"
+        />
+
+    <include
+        android:id="@+id/vTeamTwoFifthPlayer"
+        layout="@layout/item_team_two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTeamOneFifthPlayer"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

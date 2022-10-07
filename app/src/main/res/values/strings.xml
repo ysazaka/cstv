@@ -11,4 +11,7 @@
     <string name="team_one">Time 1</string>
     <string name="team_two">Time 2</string>
     <string name="league_plus_serie">Liga + série</string>
+    <string name="nickname">Nickname</string>
+    <string name="player_name">Nome do jogador</string>
+    <string name="fake_match_hour">Hoje, 21:00</string>
 </resources>
