@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Spacing -->
+    <dimen name="spacing_64dp">64dp</dimen>
+    <dimen name="spacing_56dp">56dp</dimen>
+    <dimen name="spacing_48dp">48dp</dimen>
+    <dimen name="spacing_32dp">32dp</dimen>
+    <dimen name="spacing_24dp">24dp</dimen>
+    <dimen name="spacing_20dp">20dp</dimen>
+    <dimen name="spacing_16dp">16dp</dimen>
+    <dimen name="spacing_12dp">12dp</dimen>
+    <dimen name="spacing_8dp">8dp</dimen>
+    <dimen name="spacing_6dp">6dp</dimen>
+
+    <!-- Text -->
+    <dimen name="match_list_title">32sp</dimen>
+    <dimen name="match_list_match_hour">8sp</dimen>
+    <dimen name="team_name">10sp</dimen>
+    <dimen name="vs">12sp</dimen>
+    <dimen name="league_plus_serie">8sp</dimen>
+
+    <dimen name="match_detail_title">24sp</dimen>
+    <dimen name="match_detail_match_hour">12sp</dimen>
+    <dimen name="nickname">14sp</dimen>
+    <dimen name="player_name">12sp</dimen>
+
+    <!-- ConstraintLayout -->
+    <dimen name="stretch_content">0dp</dimen>
+
+    <!-- Corner -->
+    <dimen name="match_card_corner">16dp</dimen>
+    <dimen name="player_card_corner">12dp</dimen>
+
+</resources>

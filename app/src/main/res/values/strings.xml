@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">cstv</string>
     <string name="fuze_logo">Fuze Logo</string>
+
+    <string name="matches">Partidas</string>
+    <string name="vs">vs</string>
+    <string name="first_team_logo">Logo do primeiro time</string>
+    <string name="second_team_logo">Logo do segundo time</string>
+    <string name="now">AGORA</string>
+    <string name="league_logo">Logo da Liga</string>
+    <string name="team_one">Time 1</string>
+    <string name="team_two">Time 2</string>
+    <string name="league_plus_serie">Liga + série</string>
 </resources>

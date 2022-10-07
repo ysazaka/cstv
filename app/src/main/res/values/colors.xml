@@ -10,7 +10,15 @@
 
     <color name="primary">#252525</color>
     <color name="secondary">#272639</color>
+
     <color name="card_divider">#33FFFFFF</color>
     <color name="card_live">#F42A35</color>
     <color name="card_match_hour">#33FAFAFA</color>
+    <color name="background">#161621</color>
+    <color name="team_name">@color/white</color>
+    <color name="vs">#80FFFFFF</color>
+    <color name="league_plus_serie">@color/white</color>
+    <color name="match_hour">@color/white</color>
+    <color name="nickname">@color/white</color>
+    <color name="player_name">#6C6B7E</color>
 </resources>

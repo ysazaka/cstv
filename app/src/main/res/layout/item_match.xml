@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMatchCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_match_card_rounded_corners"
+    android:layout_marginBottom="@dimen/spacing_20dp">
+
+    <TextView
+        android:id="@+id/tvMatchHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_match_live_top_right_and_bottom_left_rounded_corners"
+        android:textColor="@color/match_hour"
+        android:textSize="@dimen/match_list_match_hour"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/spacing_6dp"
+        android:paddingBottom="@dimen/spacing_6dp"
+        android:paddingStart="@dimen/spacing_8dp"
+        android:paddingEnd="@dimen/spacing_8dp"
+        tools:text="@string/now" />
+
+    <ImageView
+        android:id="@+id/ivFirstTeamLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_team_logo_placeholder"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/spacing_56dp"
+        android:contentDescription="@string/first_team_logo" />
+
+    <TextView
+        android:id="@+id/tvFirstTeamName"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/team_one"
+        android:textColor="@color/team_name"
+        android:textSize="@dimen/team_name"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivFirstTeamLogo"
+        android:layout_marginTop="@dimen/spacing_12dp" />
+
+    <TextView
+        android:id="@+id/tvVersus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textColor="@color/vs"
+        android:textSize="@dimen/vs"
+        app:layout_constraintEnd_toStartOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstTeamLogo"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSecondTeamLogo"
+        android:layout_marginStart="@dimen/spacing_24dp"
+        android:layout_marginEnd="@dimen/spacing_24dp" />
+
+    <ImageView
+        android:id="@+id/ivSecondTeamLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_team_logo_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstTeamLogo"
+        android:contentDescription="@string/second_team_logo" />
+
+    <TextView
+        android:id="@+id/tvSecondTeamName"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/team_two"
+        android:textColor="@color/team_name"
+        android:textSize="@dimen/team_name"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintEnd_toEndOf="@+id/ivSecondTeamLogo"
+        app:layout_constraintTop_toTopOf="@+id/tvFirstTeamName" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="1dp"
+        android:background="@color/card_divider"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstTeamName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_24dp"
+        android:layout_marginBottom="@dimen/spacing_48dp" />
+
+    <ImageView
+        android:id="@+id/ivLeagueLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_league_logo_placeholder"
+        app:layout_constraintTop_toBottomOf="@+id/vDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/spacing_16dp"
+        android:contentDescription="@string/league_logo" />
+
+    <TextView
+        android:id="@+id/tvLeaguePlusSerie"
+        android:layout_width="@dimen/stretch_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/league_plus_serie"
+        android:textColor="@color/league_plus_serie"
+        android:textSize="@dimen/league_plus_serie"
+        app:layout_constraintTop_toTopOf="@+id/ivLeagueLogo"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLeagueLogo"
+        app:layout_constraintStart_toEndOf="@+id/ivLeagueLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/spacing_12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
