@@ -24,7 +24,7 @@ class MatchListActivity : BaseActivity() {
     override fun initView() {
         initObservers()
         if (currentMatchList.isEmpty()) {
-            getListOfMatchesViewModel.getListOfMatchesOfTheDay()
+            getListOfMatchesViewModel.getListOfMatchesOfTheDay(currentDay.toString())
         }
     }
 

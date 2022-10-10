@@ -5,6 +5,6 @@ import com.ysazaka.cstv.data.remote.model.MatchVo
 
 interface CstvService {
 
-    suspend fun getListOfMatchesOfTheDay(): ResponseRemote<List<MatchVo>>
+    suspend fun getListOfMatchesOfTheDay(dayFilter: String): ResponseRemote<List<MatchVo>>
 
 }

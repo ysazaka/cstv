@@ -6,5 +6,5 @@ import org.koin.core.component.inject
 
 class GetListOfMatchesUseCase : KoinComponent {
     private val cstvRepository: CstvRepository by inject()
-    suspend operator fun invoke() = cstvRepository.getListOfMatchesOfTheDay()
+    suspend operator fun invoke(dayFilter: String) = cstvRepository.getListOfMatchesOfTheDay(dayFilter)
 }

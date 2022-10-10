@@ -10,8 +10,8 @@ class CstvRepositoryImpl(
     private val cstvService: CstvService
 ) : CstvRepository {
 
-    override suspend fun getListOfMatchesOfTheDay(): ResponseRequired<List<MatchDto>> {
-        return when (val responseRemote = cstvService.getListOfMatchesOfTheDay()) {
+    override suspend fun getListOfMatchesOfTheDay(dayFilter: String): ResponseRequired<List<MatchDto>> {
+        return when (val responseRemote = cstvService.getListOfMatchesOfTheDay(dayFilter)) {
             is ResponseRemote.Success -> {
                 val mappedResult = MatchesMapper.map(responseRemote.response)
                 ResponseRequired.Success(result = mappedResult)

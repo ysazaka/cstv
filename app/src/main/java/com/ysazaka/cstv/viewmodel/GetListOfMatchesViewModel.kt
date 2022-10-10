@@ -26,10 +26,10 @@ class GetListOfMatchesViewModel(
         get() = _matchesErrorState
 
 
-    fun getListOfMatchesOfTheDay() {
+    fun getListOfMatchesOfTheDay(dayFilter: String) {
         viewModelScope.launch {
             _loadingState.postValue(true)
-            when (val response = getListOfMatchesUseCase.invoke()) {
+            when (val response = getListOfMatchesUseCase.invoke(dayFilter)) {
                 is ResponseRequired.Success -> {
                     _matchesSuccessState.postValue(response.result)
                 }

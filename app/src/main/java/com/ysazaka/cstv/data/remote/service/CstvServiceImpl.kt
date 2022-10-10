@@ -9,9 +9,9 @@ class CstvServiceImpl(
     private val cstvApi: CstvAPI
 ) : CstvService {
 
-    override suspend fun getListOfMatchesOfTheDay(): ResponseRemote<List<MatchVo>> {
+    override suspend fun getListOfMatchesOfTheDay(dayFilter: String): ResponseRemote<List<MatchVo>> {
         return try {
-            val payload = cstvApi.getListOfMatchesOfTheDay()
+            val payload = cstvApi.getListOfMatchesOfTheDay(dayFilter, dayFilter)
             ResponseRemote.Success(response = payload)
         } catch (throwable: Throwable) {
             throwable.mapRemoteErrors()
