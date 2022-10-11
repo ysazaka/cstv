@@ -126,96 +126,106 @@
     <include
         android:id="@+id/vTeamOneFirstPlayer"
         layout="@layout/item_team_one_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMatchHour"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         android:layout_marginTop="@dimen/spacing_20dp"
         />
 
     <include
         android:id="@+id/vTeamOneSecondPlayer"
         layout="@layout/item_team_one_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vTeamOneFirstPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         android:layout_marginTop="@dimen/spacing_8dp"
         />
 
     <include
         android:id="@+id/vTeamOneThirdPlayer"
         layout="@layout/item_team_one_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vTeamOneSecondPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         android:layout_marginTop="@dimen/spacing_8dp"
         />
 
     <include
         android:id="@+id/vTeamOneFourthPlayer"
         layout="@layout/item_team_one_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vTeamOneThirdPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         android:layout_marginTop="@dimen/spacing_8dp"
         />
 
     <include
         android:id="@+id/vTeamOneFifthPlayer"
         layout="@layout/item_team_one_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vTeamOneFourthPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         android:layout_marginTop="@dimen/spacing_8dp"
         />
 
     <include
         android:id="@+id/vTeamTwoFirstPlayer"
         layout="@layout/item_team_two_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vTeamOneFirstPlayer"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
         />
 
     <include
         android:id="@+id/vTeamTwoSecondPlayer"
         layout="@layout/item_team_two_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vTeamOneSecondPlayer"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
         />
 
     <include
         android:id="@+id/vTeamTwoThirdPlayer"
         layout="@layout/item_team_two_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vTeamOneThirdPlayer"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
         />
 
     <include
         android:id="@+id/vTeamTwoFourthPlayer"
         layout="@layout/item_team_two_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vTeamOneFourthPlayer"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
         />
 
     <include
         android:id="@+id/vTeamTwoFifthPlayer"
         layout="@layout/item_team_two_player"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/stretch_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vTeamOneFifthPlayer"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
