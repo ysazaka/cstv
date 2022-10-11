@@ -22,7 +22,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMatchList"
-        android:layout_width="@dimen/stretch_content"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/stretch_content"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:layout_constraintStart_toStartOf="parent"

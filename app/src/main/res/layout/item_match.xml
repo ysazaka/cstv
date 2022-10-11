@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/ivFirstTeamLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/team_logo"
+        android:layout_height="@dimen/team_logo"
         android:src="@drawable/ic_team_logo_placeholder"
         app:layout_constraintEnd_toStartOf="@+id/tvVersus"
         app:layout_constraintHorizontal_bias="0.5"
@@ -68,8 +68,8 @@
 
     <ImageView
         android:id="@+id/ivSecondTeamLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/team_logo"
+        android:layout_height="@dimen/team_logo"
         android:src="@drawable/ic_team_logo_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -103,8 +103,8 @@
 
     <ImageView
         android:id="@+id/ivLeagueLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/league_logo"
+        android:layout_height="@dimen/league_logo"
         android:src="@drawable/ic_league_logo_placeholder"
         app:layout_constraintTop_toBottomOf="@+id/vDivider"
         app:layout_constraintBottom_toBottomOf="parent"

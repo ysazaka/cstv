@@ -18,7 +18,7 @@
     <dimen name="match_list_match_hour">8sp</dimen>
     <dimen name="team_name">10sp</dimen>
     <dimen name="vs">12sp</dimen>
-    <dimen name="league_plus_serie">8sp</dimen>
+    <dimen name="league_plus_serie">10sp</dimen>
 
     <dimen name="match_detail_title">24sp</dimen>
     <dimen name="match_detail_match_hour">12sp</dimen>
@@ -34,5 +34,10 @@
 
     <!-- Elevation -->
     <dimen name="elevation_2dp">2dp</dimen>
+
+    <!-- App -->
+    <dimen name="team_logo">60dp</dimen>
+    <dimen name="league_logo">16dp</dimen>
+    <dimen name="player_photo">49dp</dimen>
 
 </resources>

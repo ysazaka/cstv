@@ -1,5 +1,7 @@
 package com.ysazaka.cstv.data.model.match
 
+import java.io.Serializable
+
 data class MatchDto (
     val id: Long,
     val name: String?,
@@ -9,4 +11,4 @@ data class MatchDto (
     val league: LeagueDto?,
     val serie: SerieDto?,
     val opponentList: List<OpponentObjectDto>?
-)
+) : Serializable
