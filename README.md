@@ -11,18 +11,20 @@ Passo a passo do que foi realizado (04/10/22 - 11/10/22)
 - Pego assets e cores do Figma
 - Análise da API
 - Criação da splash
-	Sempre mostrar quando abre o app
-	Settado tempo minimo (2.5s)
+	- Sempre mostrar quando abre o app
+	- Settado tempo minimo (2.5s)
 - Organização do projeto
-	Trocado o icone launcher
+	- Trocado o icone launcher
+	- Melhoria no código
 - Tela principal (Layout)
-	Partidas do dia
-	Liga, times, data, horário da partida e status (Live ou não)
+	- Partidas do dia
+	- Liga, times, data, horário da partida e status (Live ou não)
 - Tela de detalhes da partida (Layout)
-	Time x Time
-	Lista de players
-		Foto
-		Nome
+	- Time x Time
+	- Lista de players
+		- Foto
+		- Nome
 - Integração
 - Internacionalização
+
 - Paginação e teste unitários não possível fazer dentro do período de uma semana
