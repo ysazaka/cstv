@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="matches">Matches</string>
+    <string name="first_team_logo">First Team Logo</string>
+    <string name="second_team_logo">Second Team Logo</string>
+    <string name="now">NOW</string>
+    <string name="league_logo">League Logo</string>
+    <string name="team_one">Team 1</string>
+    <string name="team_two">Team 2</string>
+    <string name="league_plus_serie">League + Serie</string>
+    <string name="player_name">Player\'s name</string>
+    <string name="fake_match_hour">Today, 21:00</string>
+    <string name="match_hour">Today, %s</string>
+</resources>

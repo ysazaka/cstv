@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">cstv</string>
-    <string name="fuze_logo">Fuze Logo</string>
+    <string name="app_name" translatable="false">cstv</string>
+    <string name="fuze_logo" translatable="false">Fuze Logo</string>
 
     <string name="matches">Partidas</string>
-    <string name="vs">vs</string>
+    <string name="vs" translatable="false">vs</string>
     <string name="first_team_logo">Logo do primeiro time</string>
     <string name="second_team_logo">Logo do segundo time</string>
     <string name="now">AGORA</string>
@@ -11,13 +11,13 @@
     <string name="team_one">Time 1</string>
     <string name="team_two">Time 2</string>
     <string name="league_plus_serie">Liga + série</string>
-    <string name="league_plus_serie_name">%s - %s</string>
-    <string name="nickname">Nickname</string>
+    <string name="league_plus_serie_name" translatable="false">%s - %s</string>
+    <string name="nickname" translatable="false">Nickname</string>
     <string name="player_name">Nome do jogador</string>
-    <string name="player_real_name">%s %s</string>
+    <string name="player_real_name" translatable="false">%s %s</string>
     <string name="fake_match_hour">Hoje, 21:00</string>
     <string name="match_hour">Hoje, %s</string>
-    <string name="hours_and_minutes_pattern">HH:mm</string>
-    <string name="status_live">live</string>
-    <string name="status_finished">finished</string>
+    <string name="hours_and_minutes_pattern" translatable="false">HH:mm</string>
+    <string name="status_live" translatable="false">live</string>
+    <string name="status_finished" translatable="false">finished</string>
 </resources>
