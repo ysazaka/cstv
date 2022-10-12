@@ -26,4 +26,3 @@ Passo a passo do que foi realizado (04/10/22 - 11/10/22)
 		- Nome
 - Integração
 - Internacionalização
-- Paginação e teste unitários não foram possíveis de fazer dentro do período de uma semana
